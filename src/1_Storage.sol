@@ -1,0 +1,26 @@
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity >=0.7.0 <0.9.0;
+
+/*
+    A contract for storing numeric data
+ */
+contract Storage {
+
+    uint256 number;
+
+    /*
+        Store a numeric value
+     */
+    function store(uint256 num) public {
+        number = num;
+    }
+
+    /*
+        Retrieve stored data
+        ??What does the word "view" mean??
+     */
+    function retrieve() public view returns (uint256){
+        return number;
+    }
+}
